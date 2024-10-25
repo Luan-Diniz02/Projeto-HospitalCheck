@@ -50,12 +50,12 @@ public class cadastro extends javax.swing.JFrame {
         jFormattedTextField9 = new javax.swing.JFormattedTextField();
         cpf_consulta = new javax.swing.JFormattedTextField();
         consultar = new javax.swing.JButton();
-        data_cadastro = new com.toedter.calendar.JDateChooser();
         jFormattedTextField1 = new javax.swing.JFormattedTextField();
         jFormattedTextField2 = new javax.swing.JFormattedTextField();
         horario_cadastro = new javax.swing.JComboBox<>();
         jFormattedTextField3 = new javax.swing.JFormattedTextField();
         nome_paciente = new javax.swing.JFormattedTextField();
+        data_cadastro = new com.toedter.calendar.JDateChooser();
         fundo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -220,10 +220,6 @@ public class cadastro extends javax.swing.JFrame {
         getContentPane().add(consultar);
         consultar.setBounds(360, 20, 100, 23);
 
-        data_cadastro.setDateFormatString("yyyy-M-d");
-        getContentPane().add(data_cadastro);
-        data_cadastro.setBounds(370, 110, 120, 22);
-
         jFormattedTextField1.setEditable(false);
         jFormattedTextField1.setText("HORARIO");
         getContentPane().add(jFormattedTextField1);
@@ -246,6 +242,8 @@ public class cadastro extends javax.swing.JFrame {
         nome_paciente.setEditable(false);
         getContentPane().add(nome_paciente);
         nome_paciente.setBounds(160, 50, 170, 22);
+        getContentPane().add(data_cadastro);
+        data_cadastro.setBounds(370, 110, 120, 22);
 
         fundo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/fundo_vs.jpeg"))); // NOI18N
         fundo.setMaximumSize(new java.awt.Dimension(0, 300));
